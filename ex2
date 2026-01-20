@@ -1,0 +1,18 @@
+n=-2:1:2
+del_discrete=[zeros(1,2),ones(1,1),zeros(1,2)]
+figure
+subplot(231)
+plot2d3(n,del_discrete)
+xlabel('Time(s)')
+ylabel('Amplitude')
+title('Unit Impulse squence')
+
+//Unit Step Sequence
+n1=0:1:5
+N=length(n1)
+Unit_Step=ones(1,N)
+subplot(232)
+plot2d3(n1,Unit_Step)
+xlabel('Discrete Time n')
+ylabel('Amplitude')
+title('Unit Step Sequence')
