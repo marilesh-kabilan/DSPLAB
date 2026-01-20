@@ -2,7 +2,7 @@ clc
 clear
 close
 //Impulse Signal
-t=5.5
+t=-5:5
 [r,c]=size(t)
 delta=[zeros(1,(c-1)/2),ones(1,1),zeros(1,(c-1)/2)]
 subplot(421)
