@@ -1,0 +1,15 @@
+clc;
+clear all;
+x=input("Enter the sequence:");
+y=xcorr(x,x);
+subplot(2,1,1);
+plot2d3(x);
+ylabel('Amplitude-->');
+xlabel('Input sequence');
+title('Input sequence');
+subplot(2,1,2);
+plot2d3(y);
+ylabel('Amplitude');
+xlabel('n-->');
+title('Output sequence');
+disp('The resultant is',y);
